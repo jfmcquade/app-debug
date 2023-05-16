@@ -1,0 +1,42 @@
+{
+  "child_folder_level_1/big-buck-bunny_trailer.webm": {
+    "filePath": "global/child_folder_level_1/big-buck-bunny_trailer.webm",
+    "md5Checksum": "9b962361f255c3a3c3059e30adde6627",
+    "size_kb": 2114.4
+  },
+  "child_folder_level_1/child_folder_level_2/child_folder_level_3/duplicate_image_1.png": {
+    "filePath": "global/child_folder_level_1/child_folder_level_2/child_folder_level_3/duplicate_image_1.png",
+    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "size_kb": 2
+  },
+  "child_folder_level_1/duplicate_image_1.png": {
+    "filePath": "global/child_folder_level_1/duplicate_image_1.png",
+    "md5Checksum": "e6d6c6a12ca13a6277084e01c088378c",
+    "size_kb": 2
+  },
+  "child_folder_level_1/gdrive_doc.docx": {
+    "filePath": "global/child_folder_level_1/gdrive_doc.docx",
+    "md5Checksum": "cf2fb19aa1d0176c84b79efd87f011fa",
+    "size_kb": 6
+  },
+  "child_folder_level_1/gdrive_sheet.xlsx": {
+    "filePath": "global/child_folder_level_1/gdrive_sheet.xlsx",
+    "md5Checksum": "b321883cd5d412f4d4781c56d831038e",
+    "size_kb": 4.6
+  },
+  "child_folder_level_1/page_2_image.jpg": {
+    "filePath": "global/child_folder_level_1/page_2_image.jpg",
+    "md5Checksum": "2a7ecb1c9635c33c50eea073f7477121",
+    "size_kb": 122.2
+  },
+  "child_folder_level_1/xlsx_file.xlsx": {
+    "filePath": "global/child_folder_level_1/xlsx_file.xlsx",
+    "md5Checksum": "910806d7fb137d202648d3683509feb5",
+    "size_kb": 18.4
+  },
+  "home_image.jpg": {
+    "filePath": "global/home_image.jpg",
+    "md5Checksum": "82a3211ce5f2eb4e9077f85b09fe4815",
+    "size_kb": 410.1
+  }
+}
