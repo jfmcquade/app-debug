@@ -1,0 +1,141 @@
+{
+  "flow_type": "template",
+  "flow_name": "home_screen",
+  "status": "released",
+  "rows": [
+    {
+      "name": "language_list",
+      "value": [
+        "name: gb_en | text: English",
+        "name: es_sp | text: Español"
+      ],
+      "type": "set_variable",
+      "_nested_name": "language_list"
+    },
+    {
+      "type": "title",
+      "name": "title_1",
+      "value": "Debug Git Repo",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "title_1"
+    },
+    {
+      "type": "radio_group",
+      "name": "language_select",
+      "value": "@fields._app_language",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "set_language",
+            "this.value"
+          ],
+          "_raw": "changed | emit: set_language:@local.language_select",
+          "_cleaned": "changed | emit: set_language:@local.language_select"
+        },
+        {
+          "trigger": "changed",
+          "action_id": "emit",
+          "args": [
+            "force_reload"
+          ],
+          "_raw": "changed | emit: force_reload",
+          "_cleaned": "changed | emit: force_reload"
+        }
+      ],
+      "parameter_list": {
+        "answer_list": "@local.language_list"
+      },
+      "exclude_from_translation": true,
+      "_nested_name": "language_select",
+      "_dynamicFields": {
+        "value": [
+          {
+            "fullExpression": "@fields._app_language",
+            "matchedExpression": "@fields._app_language",
+            "type": "fields",
+            "fieldName": "_app_language"
+          }
+        ],
+        "action_list": {
+          "0": {
+            "_raw": [
+              {
+                "fullExpression": "changed | emit: set_language:@local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ],
+            "_cleaned": [
+              {
+                "fullExpression": "changed | emit: set_language:@local.language_select",
+                "matchedExpression": "@local.language_select",
+                "type": "local",
+                "fieldName": "language_select"
+              }
+            ]
+          }
+        },
+        "parameter_list": {
+          "answer_list": [
+            {
+              "fullExpression": "@local.language_list",
+              "matchedExpression": "@local.language_list",
+              "type": "local",
+              "fieldName": "language_list"
+            }
+          ]
+        }
+      },
+      "_dynamicDependencies": {
+        "@fields._app_language": [
+          "value"
+        ],
+        "@local.language_select": [
+          "action_list.0._raw",
+          "action_list.0._cleaned"
+        ],
+        "@local.language_list": [
+          "parameter_list.answer_list"
+        ]
+      }
+    },
+    {
+      "type": "image",
+      "name": "image_1",
+      "value": "home_image.jpg",
+      "_translations": {
+        "value": {}
+      },
+      "_nested_name": "image_1"
+    },
+    {
+      "type": "button",
+      "name": "button_1",
+      "value": "Next Page",
+      "_translations": {
+        "value": {}
+      },
+      "action_list": [
+        {
+          "trigger": "click",
+          "action_id": "go_to",
+          "args": [
+            "page_2"
+          ],
+          "_raw": "click | go_to: page_2",
+          "_cleaned": "click | go_to: page_2"
+        }
+      ],
+      "_nested_name": "button_1"
+    }
+  ],
+  "_xlsxPath": "example_sheet.xlsx"
+}
