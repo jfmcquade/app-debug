@@ -14,7 +14,7 @@ config.git = {
 config.app_data.output_path = "./app_data";
 
 // Override any app constants here
-config.app_config.APP_HEADER_DEFAULTS.title = "app_debug_test";
+config.app_config.APP_HEADER_DEFAULTS.title = "app_debug";
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "app_debug";
 
 export default config;
